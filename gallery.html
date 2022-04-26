@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/main_stylesheet.css" type="text/css" rel="stylesheet">
+  </head>
+  
+
+  <body>
+    <header>
+      <div id="a-header">
+        <div class="a-logo-cont" onclick="a_backHome()">
+          <img class="a-logo" src="images/Lotus_beauty.webp" alt="Lotus-flower" >
+        </div>
+
+        <div class="a-headNav-cont">
+          <div class="a-header-cont">
+            <h1>Lotus Beauty Salon</h1>
+          </div>                   
+          
+          <nav class="a-nav-cont">
+            <ul class="a-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li> <a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+              
+            <div class="a_hamburger">
+              <div class="a_line"></div>
+              <div class="a_line"></div>
+              <div class="a_line"></div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="a-logo-cont">
+          <img class="a-logo-number" src="images/Lotus_beauty.webp" alt="Lotus-flower" onclick="a_backHome()">
+        </div>  
+      </div>
+    </header>
+
+
+    <main>
+      <h1 style="text-align: center; margin-top: 50px;">Gallery</h1>
+      <h2 style="text-align: center; margin-top: 50px;">Below is a selection of images taken for the Lotus Beauty Salon.<br>
+      To increase the size of an image, click on the image you would like to be increased.</h2>
+        
+      <a class="a-ross"><button onclick=bookApp()>Book An Appointment</button></a><br>
+      <h2 class="opener">Here at the Lotus Beauty Salon, we offer a wide range of services to treat yourself and your loved ones.</h2>
+      
+      <div class="row">
+        <div class="column">
+          <img src="images/hair-before.WebP" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Client getting a haircut.">
+        </div> 
+        
+        <div class="column">
+          <img src="images/hair-after.WebP" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Client after getting a haircut.">
+        </div>
+        <div class="column">
+          <img src="images/hair-blonde.WebP" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Client with blonde hair getting a haircut.">
+        </div>
+        <div class="column">
+          <img src="images/char-mask.WebP" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Client recieving a charcoal mask.">
+        </div>
+        <div class="column">
+          <img src="images/pore-cleanse.WebP" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Client getting a pore cleanse.">
+        </div>
+        <div class="column">
+          <img src="images/nail-client-2.WebP" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Close up of a client's nails after getting their nails done.">
+        </div>
+        <div class="column">
+          <img src="images/face-massage.WebP" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Client getting a face massage.">
+        </div>
+        <div class="column">
+          <img src="images/hair-brunette.WebP" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Client with brunette hair getting a haircut.">
+        </div>
+        <div class="column">
+          <img src="images/hair-curler.WebP" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Client getting their hair curled for an event.">
+        </div>
+        <div class="column">
+          <img src="images/eyeshadow-2.WebP" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Client getting their eye makeup done for an event.">
+        </div>
+        <div class="column">
+          <img src="images/nail-painting.WebP" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="Client getting their nails done.">
+        </div>
+        <div class="column">
+          <img src="images/nail-colours.WebP" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="Various colours of nail paints used by the nail technician.">
+        </div>
+        <div class="column">
+          <img src="images/nails-customer.WebP" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="Client showing off their nails after getting them done.">
+        </div>
+        <div class="column">
+          <img src="images/nail-tech.WebP" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="Close up shot of the nail technician doing a client's nails.">
+        </div>
+        <div class="column">
+          <img src="images/nail-tech-2.WebP" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="Client getting their nails done by the nail technician.">
+        </div>
+        <div class="column">
+          <img src="images/salon.WebP" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="Image of the Lotus Beauty Salon.">
+        </div>
+        <div class="column">
+          <img src="images/sinks.WebP" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="Close up image of the sinks used by the hairdresser in the salon.">
+        </div>
+        <div class="column">
+          <img src="images/pallette.WebP" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="An example of the make up pallettes used by the makeup artist.">
+        </div>
+      </div>
+            
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal" style="margin-top:20px;" >
+        
+          <div class="modal-content-2">
+            <div class="mySlides">
+              <div class="numbertext">1/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/hair-before.WebP" style="width:370px;" alt="Client getting a haircut." class="img-modal">
+              </div>         
+            <div class="mySlides">
+              <div class="numbertext">2/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/hair-after.WebP" style="width:370px;" alt="Client after getting a haircut." class="img-modal">
+            </div>     
+          <div class="mySlides">
+            <div class="numbertext">3/18</div>
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+              <img src="images/hair-blonde.WebP" style="width:370px;" alt="Client with blonde hair getting a haircut." class="img-modal">
+          </div>
+            <div class="mySlides">
+              <div class="numbertext">4/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/char-mask.WebP" style="width:370px;" alt="Client recieving a charcoal mask." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/pore-cleanse.WebP" style="width:370px;" alt="Client getting a pore cleanse." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nail-client-2.WebP" style="width:370px;" alt="Close up of a client's nails after getting their nails done." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/face-massage.WebP" style="width:370px;" alt="Client getting a face massage." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/hair-brunette.WebP" style="width:370px;" alt="Client with brunette hair getting a haircut." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/hair-curler.WebP" style="width:370px;" alt="Client getting their hair curled for an event." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">10/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/eyeshadow-2.WebP" style="width:370px;" alt="Client getting their eye makeup done for an event." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">11/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nail-painting.WebP" style="width:370px;" alt="Client getting their nails done." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">12/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nail-colours.WebP" style="width:370px;" alt="Various colours of nail paints used by the nail technician." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">13/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nails-customer.WebP" style="width:370px;" alt="Client showing off their nails after getting them done." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">14/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nail-tech.WebP" style="width:370px;" alt="Close up shot of the nail technician doing a client's nails." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">15/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/nail-tech-2.WebP" style="width:370px;" alt="Client getting their nails done by the nail technician." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">16/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/salon.WebP" style="width:370px;" alt="Image of the Lotus Beauty Salon." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">17/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/sinks.WebP" style="width:370px;" alt="Close up image of the sinks used by the hairdresser in the salon." class="img-modal">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">18/18</div>
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+                <img src="images/pallette.WebP" style="width:370px;" alt="An example of the make up pallettes used by the makeup artist." class="img-modal">
+            </div>
+          </div>
+              
+              
+          <div class="model-content">
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption" style="font-family: Roboto; text-align: center;"></p>
+          </div>
+          
+              
+          <!-- Thumbnail image controls -->
+          <div class="col2">
+            <div class="column">
+              <img class="demo" src="images/hair-before.WebP" onclick="currentSlide(1)" alt="Client getting a haircut.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/hair-after.WebP" onclick="currentSlide(2)" alt="Client after getting a haircut.">
+            </div>          
+            <div class="column">
+              <img class="demo" src="images/hair-blonde.WebP" onclick="currentSlide(3)" alt="Client with blonde hair getting a haircut.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/char-mask.WebP" onclick="currentSlide(4)" alt="Client recieving a charcoal mask.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/pore-cleanse.WebP" onclick="currentSlide(5)" alt="Client getting a pore cleanse.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nail-client-2.WebP" onclick="currentSlide(6)" alt="Close up of a client's nails after getting their nails done.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/face-massage.WebP" onclick="currentSlide(7)" alt="Client getting a face massage.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/hair-brunette.WebP" onclick="currentSlide(8)" alt="Client with brunette hair getting a haircut.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/hair-curler.WebP" onclick="currentSlide(9)" alt="Client getting their hair curled for an event.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/eyeshadow-2.WebP" onclick="currentSlide(10)" alt="Client getting their eye makeup done for an event.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nail-painting.WebP" onclick="currentSlide(11)" alt="Client getting their nails done.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nail-colours.WebP" onclick="currentSlide(12)" alt="Various colours of nail paints used by the nail technician.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nails-customer.WebP" onclick="currentSlide(13)" alt="Client showing off their nails after getting them done.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nail-tech.WebP" onclick="currentSlide(14)" alt="Close up shot of the nail technician doing a client's nails.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/nail-tech-2.WebP" onclick="currentSlide(15)" alt="Client getting their nails done by the nail technician.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/salon.WebP" onclick="currentSlide(16)" alt="Image of the Lotus Beauty Salon.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/sinks.WebP" onclick="currentSlide(17)" alt="Close up image of the sinks used by the hairdresser in the salon.">
+            </div>
+            <div class="column">
+              <img class="demo" src="images/pallette.WebP" onclick="currentSlide(18)" alt="An example of the make up pallettes used by the makeup artist.">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <p style="display: flex; justify-content: center; margin-top: 20px;">To make an appointment, click here:</p>
+      <a class="a-ross"><button onclick=bookApp() style="margin-top: 10px; margin-bottom: 10px;" > Book An Appointment</button></a>
+    </main>
+              
+    <footer>
+      <div class="a-footer">
+        <div class="a-footer-logo">
+          <a href="index.html"><img src="images/Lotus_beauty.webp" alt="Lotus-flower" class="footer-logo"></a>
+        </div>
+
+        <div class="a-footer-menu">
+          <a href="services.html" id="a-ser-page">Services</a>
+          <a href="gallery.html" id="a-gal-page">Gallery</a>
+          <a href="contact.html" id="a-con-page">Contact</a>
+        </div>
+
+        <div class="a-icons">
+          <!--Facebook icon-->
+          <img src="images/fb.webp" alt="facbook">
+          <!-- Instagram icon -->
+          <img src="images/insta.webp" alt="instagram">
+          <!--Twitter icon-->
+          <img src="images/twitter.webp" alt="twitter">
+          <!--Google icon-->
+          <img src="images/google.webp" alt="googlePlus">
+        </div>
+
+        <div class="a-back-to-top"  title="scroll up">
+          <img onclick="scrollToTop()" src="images/up_arrow.webp" alt="up arrow">
+        </div>
+      </div>
+    </footer>
+    
+    <script src="scripts/aelitasJavaScript.js"></script>
+    <script src="scripts/rossJavaScript.js"></script>
+  </body>
+</html>

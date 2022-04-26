@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="stylesheets/main_stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="a-header">
+            <div class="a-logo-cont" onclick="a_backHome()">
+                <img class="a-logo" src="images/Lotus_beauty.webp" alt="Lotus-flower" >
+            </div>
+            <div class="a-headNav-cont">
+                <div class="a-header-cont">
+                    <h1>Lotus Beauty Salon</h1>
+                </div>                   
+                <nav class="a-nav-cont">
+                    <ul class="a-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li> <a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                    <div class="a_hamburger">
+                        <div class="a_line"></div>
+                        <div class="a_line"></div>
+                        <div class="a_line"></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="a-logo-cont">
+                <img class="a-logo-number" src="images/Lotus_beauty.webp" alt="Lotus-flower" onclick="a_backHome()">
+            </div>  
+        </div>
+    </header>
+
+    <main class="left-right-side-margins">
+        <h1 style="text-align: center; margin-top: 50px; margin-bottom: 30px">Meet The Team</h1>
+        <!--Make an appointment button-->
+        <div class="saleRedirect" style="margin-bottom:30px;">
+            <a href="promotion.html"><h3 style="text-align: center;">Click here! Up 25% off!</h3></a>
+        </div>
+        <!--Carosel of images-->
+        <!--Start of Slider-->
+         <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="Containers">
+                <img src="images/hairdress1_small.WebP" style="width:100%" alt="hairdresser">
+            </div>
+            <div class="Containers">
+                <img src="images/hairdress2_small.WebP" style="width:100%" alt="hairdresser">
+            </div>
+            <div class="Containers">
+                <img src="images/staff1_small.WebP" style="width:100%" alt="staff">
+            </div>
+            <div class="Containers">
+                <img src="images/staff2_small.WebP" style="width:100%" alt="staff">
+            </div>
+            <!-- Back and forward buttons -->
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The circles/dots -->
+        <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
+    <!-- End of Slider-->
+        <!--Each team member has an image in box 1 & descriptor in box 2-->
+        <!--Team member 1-->
+        <div class="container-team">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img class="team-image" src="images/staff_member1.WebP" alt="Administration - Jessie">
+                    </div>
+                    <div class="col-sm-6 offset-1, justify-content-centre,">
+                        <h3>Welcoming you on your arrival</h3>
+                        <h3>Jessie at reception</h3>
+                        <p>Jessie has worked with us for the past five years and will help you orgnainse your day at Lotus Beauty Salon.
+                            Having studied at University College of Cork, she graduated with with a degree in management and business organisation. 
+                            Jessie manages the whole system and website for our salon and is the first point of contact if you have any issues.</p>
+                    </div>
+                </div>
+            </div>
+         <!--Team member 2-->
+         <div class="container-team">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="team-image" src="images/staff_member2.WebP" alt="Nails & Makeup - Emma">
+                </div>
+                <div class="col-sm-6 offset-1, justify-content-centre">
+                    <h3>Event or night out?</h3>
+                        <h3>Emma will sort your nails and makeup</h3>
+                        <p>Emma has been part of the team with the last three years and has worked wonders on our clients. Emma trained in Cork in hairdressing and makeup at Crawford,
+                            after which she studied nails and artistic creations in New York on a scholarship from the University of Cosmotology in New York. She developed many skills 
+                            worked for some amazing clients such as T&J.</p>
+                </div>
+            </div>
+        </div>
+         <!--Team member 3-->
+         <div class="container-team">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="team-image" src="images/staff_member3.WebP" alt="Makeup & Massage - Shauna">
+                </div>
+                <div class="col-sm-6 offset-1, justify-content-centre">
+                    <h3>Or just looking to relax?</h3>
+                    <h3>Shauna is our trained masseuse</h3>
+                        <p>Shauna has been our massuese with the last two years. Having returned from Australia where she studied holistic massage therapy, she is now
+                            head of our massage and wellbeing department. Here she proves various different styles of massages and in the last year, has set up classes in which 
+                        she teaches different forms of massage and helps members become qualifed in their line of massage therapy</p>
+                </div>
+            </div>
+        </div>
+        <!--Team member 4-->
+        <div class="container-team" style="margin-bottom:50px;">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="team-image" src="images/staff_member4.WebP" alt="Hair - James">
+                </div>
+                <div class="col-sm-6 offset-1, justify-content-centre">
+                    <h3>Need a hair do?</h3>
+                    <h3>James will change your style</h3>
+                        <p>James has been our stylist and hairdresser over the last ten years. Prior, he studied cosmotology under his mentor Johnthan Van Ness for four years. 
+                            During which, he worked on the set of Queer Eye for Netflix being Van Ness's own personal cosmotologist. At present, James runs our hair and styling department
+                            meeting some clients and working for other clients abroad.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <div class="a-footer">
+            <div class="a-footer-logo">
+                <a href="index.html"><img src="images/Lotus_beauty.webp" alt="Lotus-flower" class="footer-logo"></a>
+            </div>
+
+            <div class="a-footer-menu">
+                <a href="services.html" id="a-ser-page">Services</a>
+                <a href="gallery.html" id="a-gal-page">Gallery</a>
+                <a href="contact.html" id="a-con-page">Contact</a>
+            </div>
+
+            <div class="a-icons">
+                <!--Facebook icon-->
+                <img src="images/fb.webp" alt="facbook">
+                <!-- Instagram icon -->
+                <img src="images/insta.webp" alt="instagram">
+                <!--Twitter icon-->
+                <img src="images/twitter.webp" alt="twitter">
+                <!--Google icon-->
+                <img src="images/google.webp" alt="googlePlus">
+            </div>
+
+            <div class="a-back-to-top"  title="scroll up">
+                <img onclick="scrollToTop()" src="images/up_arrow.webp" alt="up arrow">
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/stevensJavaScript.js"></script>
+    <script src="scripts/aelitasJavaScript.js"></script>
+</body>
+</html>
